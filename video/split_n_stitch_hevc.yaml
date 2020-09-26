@@ -24,7 +24,7 @@ tasks:
   - name: chunks
     type: media/vsplit
     input: ${input}
-    chunkSize: 10s
+    chunkSize: 60s
 
   - name: chunks
     type: map
