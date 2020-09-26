@@ -45,6 +45,15 @@ tasks:
         "-ss", "${item.start}",
         "-i", "${input}",
         "-to","${item.end}",
+        "-c:v", "libsvt_hevc",
+        "-map", "0:0",
+        "-map", "0:1",
+        "-map", "0:2",
+        "-map", "0:3",
+        "-b:v", "8000K"
+        "-c:a:, "copy",
+        "-rc", "1",
+        "-tune", "0",
         "${item.outputChunk}"
       ]
 
